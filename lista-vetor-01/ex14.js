@@ -1,15 +1,11 @@
-let a = [1, 2, 3, 4, 5, 6, 7, 8, "x"];
-let primeira = 0;
+let a = [1, 2, 3, 4, 5, 6, 7, 8, "x", "x"];
+let primeira = -1;
 
 for (let i = 0; i < a.length; i++) {
-    if (primeira === 0) {
         if (a[i] === "x") {
-            console.log(i);
-            primeira++;
+            primeira = i;
+            break;
         }
-    }
 }
 
-if (primeira === 0) {
-    console.log("-1");
-}
+console.log(primeira)
