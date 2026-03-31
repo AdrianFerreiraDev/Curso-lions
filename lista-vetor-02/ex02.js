@@ -10,7 +10,7 @@ for(let i = 0; i < a.length; i++) {
         }
     }
     if(!repetido) {
-        b[b.length] = a[i]
+        b[b.length] = a[i];
     }
 }
 
